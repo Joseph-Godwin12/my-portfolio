@@ -14,7 +14,7 @@ export default function ProjectsPage() {
           A few things I've built.
         </h1>
         <p className="text-base sm:text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-          Real products, built end to end — from UI to deployment.
+          Real products, built end to end, from UI to deployment.
         </p>
       </div>
 

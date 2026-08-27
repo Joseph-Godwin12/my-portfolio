@@ -5,13 +5,14 @@ export default function About() {
   return (
     <section className="w-full max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 py-16 lg:py-28">
 
+      
       {/* Top: intro */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 mb-20 lg:mb-28">
-        <div className="lg:col-span-4 flex flex-col gap-6">
+        <div className="lg:col-span-4 flex flex-col items-center text-center lg:items-start lg:text-left gap-6">
           <span className="text-lime-700 dark:text-lime-500 text-sm font-medium tracking-widest uppercase">
             About Me
           </span>
-          <div className="relative rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-800 max-w-xs">
+          <div className="relative rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-800 max-w-xs mx-auto lg:mx-0">
             <Image
               src="/assets/joseph.jpg"
               alt="Joseph Egbucha"
@@ -22,7 +23,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="lg:col-span-8 flex flex-col gap-6">
+        <div className="lg:col-span-8 flex flex-col items-center text-center lg:items-start lg:text-left gap-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] text-black dark:text-zinc-50">
             {aboutIntro.heading}
           </h1>
