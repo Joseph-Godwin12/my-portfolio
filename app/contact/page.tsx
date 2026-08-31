@@ -13,7 +13,7 @@ export default function Contact() {
     setIsSubmitting(true)
     const form = e.currentTarget
     const data = new FormData(form)
-
+e
     try {
       const response = await fetch("https://formsubmit.co/ajax/josephgodwin768@gmail.com", {
         method: "POST",
