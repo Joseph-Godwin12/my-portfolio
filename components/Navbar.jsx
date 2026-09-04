@@ -41,7 +41,7 @@ export default function Navbar() {
         {/* Right: resume button (desktop only) */}
         <div className="hidden md:flex justify-self-end">
           <a
-            href="/Joseph_Egbucha_Resume.pdf"
+            href="/Joseph_Egbucha.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 bg-lime-500 text-white text-sm font-medium rounded-full hover:bg-lime-600 transition-colors"
