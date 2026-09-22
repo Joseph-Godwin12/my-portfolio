@@ -1,9 +1,10 @@
+// app/projects/page.tsx
 import Project from '../../components/Project'
 import { projects } from '../../constants'
 
 export default function ProjectsPage() {
   return (
-    <section className="w-full max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 py-16 lg:py-28">
+    <section className="w-full max-w-[1152px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-28">
 
       {/* Header */}
       <div className="flex flex-col items-center text-center gap-6 mb-16 lg:mb-20 mx-auto max-w-2xl">
@@ -19,7 +20,7 @@ export default function ProjectsPage() {
       </div>
 
       {/* Grid */}
-      <div className="grid sm:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 gap-8">
         {projects.map((p, idx) => (
           <Project key={idx} project={p} />
         ))}

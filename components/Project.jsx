@@ -4,10 +4,10 @@ export default function Project({ project }) {
   const { title, description, tags, image, liveUrl, githubUrl } = project
 
   return (
-    <div className="group flex flex-col rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden hover:border-lime-500 dark:hover:border-lime-500 transition-colors">
+    <div className="group flex flex-col md:flex-row rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden hover:border-lime-500 dark:hover:border-lime-500 transition-colors">
 
       {/* Image */}
-      <div className="relative w-full aspect-video bg-zinc-100 dark:bg-zinc-900 overflow-hidden">
+      <div className="relative w-full md:w-[42%] lg:w-[420px] shrink-0 aspect-video md:aspect-auto bg-zinc-100 dark:bg-zinc-900 overflow-hidden">
         <Image
           src={image}
           alt={title}
@@ -17,12 +17,12 @@ export default function Project({ project }) {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col gap-4 p-6 flex-1">
-        <h3 className="text-xl font-bold text-black dark:text-zinc-50">
+      <div className="flex flex-col gap-4 p-6 md:p-8 flex-1 justify-center">
+        <h3 className="text-xl md:text-2xl font-bold text-black dark:text-zinc-50">
           {title}
         </h3>
 
-        <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 flex-1">
+        <p className="text-sm md:text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
           {description}
         </p>
 
@@ -39,7 +39,7 @@ export default function Project({ project }) {
         </div>
 
         {/* Buttons */}
-        <div className="flex gap-3 mt-2">
+        <div className="flex gap-3 mt-2 max-w-sm">
           <a
             href={liveUrl}
             target="_blank"

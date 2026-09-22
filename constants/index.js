@@ -52,6 +52,15 @@ export const projects = [
     liveUrl: "https://finance-tracker-sigma-silk.vercel.app/",
     githubUrl: "https://github.com/Joseph-Godwin12/Finance-tracker",
   },
+ {
+  title: "City In A Box",
+  description:
+    "A postcard generator for any city, live weather, a short story, and a photo, built from free public APIs.",
+  tags: ["React", "Next.js", "Tailwind CSS"],
+  image: "/assets/city.png",
+  liveUrl: "https://city-in-a-box.vercel.app/",
+  githubUrl: "https://github.com/Joseph-Godwin12/city-in-a-box.git"
+ }
 ]
 
 export const experience = [
